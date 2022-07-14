@@ -1,0 +1,20 @@
+{
+    "name": "stnguyen90/utopia-php-crud",
+    "description": "A demo CRUD app built with Utopia Framework",
+    "type": "project",
+    "require": {
+        "ext-swoole": "*",
+        "utopia-php/framework": "^0.19.21",
+        "utopia-php/swoole": "^0.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Stnguyen90\\UtopiaPhpCrud\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Steven"
+        }
+    ]
+}
