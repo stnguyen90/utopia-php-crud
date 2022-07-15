@@ -1,7 +1,24 @@
-# Swoole Extension
-FROM compile AS swoole
+FROM php:8.0.18-cli-alpine3.15 as compile
+
+ARG DEBUG=false
+ENV DEBUG=$DEBUG
 
 ENV PHP_SWOOLE_VERSION=v4.8.10
+
+RUN \
+  apk add --no-cache --virtual .deps \
+  make \
+  automake \
+  autoconf \
+  gcc \
+  g++ \
+  git \
+  zlib-dev \
+  brotli-dev \
+  openssl-dev
+
+# Swoole Extension
+FROM compile AS swoole
 
 RUN \
   git clone --depth 1 --branch $PHP_SWOOLE_VERSION https://github.com/swoole/swoole-src.git && \
