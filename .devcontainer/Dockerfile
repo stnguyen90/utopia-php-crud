@@ -38,8 +38,7 @@ RUN cd /tmp && \
     phpize && \
     ./configure && \
     make && make install && \
-    cd ..;\
-  fi
+    cd ..;
 
 FROM mcr.microsoft.com/vscode/devcontainers/php:0-8-bullseye
 
