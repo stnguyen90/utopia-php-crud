@@ -54,6 +54,8 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     
 RUN ln -s /usr/lib/x86_64-linux-musl/libc.so /lib/libc.musl-x86_64.so.1
 
+RUN docker-php-ext-install sockets
+
 # [Optional] Uncomment this line to install global node packages.
 # RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
 
