@@ -17,6 +17,8 @@ RUN \
   brotli-dev \
   openssl-dev
 
+RUN docker-php-ext-install sockets
+
 # Swoole Extension
 FROM compile AS swoole
 
