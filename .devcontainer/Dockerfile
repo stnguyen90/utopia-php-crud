@@ -40,7 +40,7 @@ RUN cd /tmp && \
     make && make install && \
     cd ..;
 
-FROM mcr.microsoft.com/vscode/devcontainers/php:0-8-bullseye
+FROM mcr.microsoft.com/vscode/devcontainers/php:0-8.0-bullseye
 
 # [Choice] Node.js version: none, lts/*, 16, 14, 12, 10
 ARG NODE_VERSION="none"
@@ -56,7 +56,7 @@ RUN ln -s /usr/lib/x86_64-linux-musl/libc.so /lib/libc.musl-x86_64.so.1
 # RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
 
 # Add Extensions
-COPY --from=swoole /usr/local/lib/php/extensions/no-debug-non-zts-20200930/swoole.so /usr/local/lib/php/extensions/no-debug-non-zts-20200930/yasd.so* /usr/local/lib/php/extensions/no-debug-non-zts-20210902/
+COPY --from=swoole /usr/local/lib/php/extensions/no-debug-non-zts-20200930/swoole.so /usr/local/lib/php/extensions/no-debug-non-zts-20200930/yasd.so* /usr/local/lib/php/extensions/no-debug-non-zts-20200930/
 
 # Enable Extensions
 RUN echo extension=swoole.so >> /usr/local/etc/php/conf.d/swoole.ini
