@@ -3,10 +3,14 @@
 
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: composer install
-    command: composer install
+  - init: composer install --ignore-platform-reqs --optimize-autoloader --no-plugins --no-scripts --prefer-dist
+    command: composer install --ignore-platform-reqs --optimize-autoloader --no-plugins --no-scripts --prefer-dist
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 # ports:
 #   - port: 3000
 #     onOpen: open-preview
+
+vscode:
+  extensions:
+    - ms-azuretools.vscode-docker
