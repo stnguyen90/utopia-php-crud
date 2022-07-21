@@ -1,5 +1,5 @@
-image:
-  file: .devcontainer/Dockerfile
+# image:
+#   file: .devcontainer/Dockerfile
 
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
