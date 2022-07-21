@@ -1,13 +1,13 @@
 FROM phpswoole/swoole:4.8-php8.0-alpine
 
-WORKDIR /src
+WORKDIR /app
 
-COPY composer.lock /src
-COPY composer.json /src
+COPY composer.lock /app
+COPY composer.json /app
 
 RUN composer install
 
-COPY . /src
+COPY . /app
 
 EXPOSE 8080
 
