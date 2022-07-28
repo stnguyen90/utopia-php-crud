@@ -8,7 +8,7 @@
     "method": "POST",
     "sortNum": 5000,
     "created": "2022-07-28T00:37:41.057Z",
-    "modified": "2022-07-28T00:37:41.057Z",
+    "modified": "2022-07-28T00:42:04.395Z",
     "headers": [],
     "params": [],
     "body": {
@@ -16,7 +16,14 @@
       "raw": "{\n    \"title\": \"new todo\"\n}",
       "form": []
     },
-    "tests": []
+    "tests": [
+      {
+        "type": "set-env-var",
+        "custom": "json.id",
+        "action": "setto",
+        "value": "{{id}}"
+      }
+    ]
   },
   {
     "_id": "d1c7c262-58de-4588-87cc-d0ab26a9b1f9",
@@ -41,12 +48,12 @@
     "method": "GET",
     "sortNum": 20000,
     "created": "2022-07-28T00:37:41.060Z",
-    "modified": "2022-07-28T00:37:41.060Z",
+    "modified": "2022-07-28T00:43:51.576Z",
     "headers": [],
     "params": [
       {
         "name": "id",
-        "value": "62e1d80b9664c",
+        "value": "{{id}}",
         "isPath": true
       }
     ],
@@ -61,12 +68,12 @@
     "method": "PATCH",
     "sortNum": 30000,
     "created": "2022-07-28T00:37:41.061Z",
-    "modified": "2022-07-28T00:37:41.061Z",
+    "modified": "2022-07-28T00:46:14.608Z",
     "headers": [],
     "params": [
       {
         "name": "id",
-        "value": "62e1d80b9664c",
+        "value": "{{id}}",
         "isPath": true
       }
     ],
@@ -86,12 +93,12 @@
     "method": "DELETE",
     "sortNum": 40000,
     "created": "2022-07-28T00:37:41.062Z",
-    "modified": "2022-07-28T00:37:41.062Z",
+    "modified": "2022-07-28T00:46:22.056Z",
     "headers": [],
     "params": [
       {
         "name": "id",
-        "value": "62e1d80b9664c",
+        "value": "{{id}}",
         "isPath": true
       }
     ],
