@@ -4,8 +4,8 @@
   "type": "project",
   "require": {
     "ext-swoole": "*",
-    "utopia-php/framework": "^0.19.21",
-    "utopia-php/swoole": "^0.3.0"
+    "utopia-php/framework": "0.19.*",
+    "utopia-php/swoole": "0.3.*"
   },
   "autoload": {
     "psr-4": {
