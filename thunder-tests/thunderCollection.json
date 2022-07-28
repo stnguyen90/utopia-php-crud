@@ -1,0 +1,13 @@
+[
+  {
+    "_id": "ef7aaaa3-35e2-40dc-9cc4-bd3e6cbf7044",
+    "colName": "Todos",
+    "created": "2022-07-28T00:37:41.055Z",
+    "sortNum": 10000,
+    "folders": [],
+    "settings": {
+      "headers": [],
+      "tests": []
+    }
+  }
+]
